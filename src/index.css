@@ -1,0 +1,32 @@
+:root {
+
+  --color-bg-1: #020206;
+  --color-bg-1-t: #020206df;
+  --color-bg-2: #2D2D2D;
+  --color-bg-3: #262626;
+  --color-font-1: #FFFFFF;
+  --color-font-2: #ACACAC;
+  --color-main-1: #ADFF00;
+  --color-red-1: #D90000;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 17px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--color-bg-1);
+  color: var(--color-font-1);
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+  display: flex;
+  justify-content: center;
+}
