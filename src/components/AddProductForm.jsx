@@ -7,7 +7,8 @@ const AddProductForm = ({ addItemToShoppingList }) => {
   const [quantity, setQuantity] = useState(1);
 
   const handleFormSubmit = (e) => {
-    e.preventDefault();
+    if (product !== "") {
+      e.preventDefault();
     addItemToShoppingList({
       name: product,
       quantity: quantity,
@@ -16,6 +17,8 @@ const AddProductForm = ({ addItemToShoppingList }) => {
     });
     setProduct("");
     setQuantity(1);
+    }
+    
   }
 
   const increaseQuantity = (e) => {
@@ -71,7 +74,7 @@ const AddProductForm = ({ addItemToShoppingList }) => {
             <PlusIcon height={24} width={24} />
           </button>
         </div>
-        <button className="add-button" onClick={handleFormSubmit} tabIndex={1}>
+        <button className="add-button" type="submit" onClick={handleFormSubmit} tabIndex={1}>
           <PlusIcon height={24} width={24} />
         </button>
       </form>
