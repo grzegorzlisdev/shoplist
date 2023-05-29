@@ -110,10 +110,13 @@
 
 .edit-product-form-container {
   position: fixed;
+  left: 0;
   width: 100vw;
   height: 100vh;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.752);
+  display: flex;
+  justify-content: center;
 }
 
 .tab-title {
@@ -124,7 +127,10 @@
 
 .edit-product-form {
   margin-top: 50px;
+  width: 100%;
+  min-width: 150px;
   max-width: 680px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   background-color: var(--color-bg-2);
@@ -209,7 +215,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 120px;
   gap: 10px;
   width: 100%;
   padding: 10px;
